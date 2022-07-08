@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="GroupsPgm">
+  
+   <groups>
+   
+   <define name="NationalImprtance">
+   <include name="Entertainment"></include>
+   <include name="Defence"></include>
+    </define>
+    
+    <define name="Lifeneed">
+    
+    <include name="Education"></include>
+    
+    </define>
+    
+    <run>
+    <include name="NationalImprtance"></include>
+    <include name="Lifeneed"></include>
+    </run>
+    
+    
+    
+    
+    
+    
+   </groups>
+  
+  
+  
+  
+  
+    <classes>
+      <class name="com.testng.GroupsPgm"/>
+    </classes>
+  </test> <!-- GroupsPgm -->
+</suite> <!-- Suite -->
